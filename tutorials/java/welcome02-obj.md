@@ -11,7 +11,7 @@ In this tutorial, we'll cover how you can connect to a data source and retrieve 
 
 A _class_ is a template, or blueprint, for creating _objects_. A class definition specifies _fields_ (pieces of information, or attributes, associated with an object) and _methods_ (functions defining the behavior of objects). An object, generally speaking, is used to represent  information as a compound form of data -- a unit of data made up of smaller, individual pieces (the _fields_).
 
-In the context of the weather data that we introduced in the [first tutorial](welcome01.md), we might be interested in representing and manipulating information about an **observation** -- a compound notion made up of smaller pieces of information, such as the temperature, wind direction, and general description of the weather conditions. To get started, add the following snippet of code to a `main` method (or `setup` in Processing). Don't forget to `import core.data.*;` at the top of your file (and additionally call `DataSource.initializeProcessing(this);` at the beginning of `setup()` in Processing). I'm suffixing the variable names with `1` because later you'll set up another pair of variables to read an observation from a second observation station.
+In the context of the weather data that we introduced in the [first tutorial](welcome01.md), we might be interested in representing and manipulating information about an **observation** -- a compound notion made up of smaller pieces of information, such as the temperature, wind direction, and general description of the weather conditions. To get started, add the following snippet of code to a `main` method. Don't forget to `import core.data.*;` at the top of your file . I'm suffixing the variable names with `1` because later you'll set up another pair of variables to read an observation from a second observation station.
 
 
     String id1 = "KATL";
@@ -20,9 +20,11 @@ In the context of the weather data that we introduced in the [first tutorial](we
     ds1.load();
     ds1.printUsageString();
 
-Run your program. You should get a printout of available data labels in the data. Let's assume for the purposes of this tutorial that we are interested in the temperature, wind direction, and general description of the weather conditions. Can you figure out the labels for these pieces of the data?
+Run your program. You should get a printout of available data labels in the data. Let's assume for the purposes of this tutorial that we are interested in the **temperature, wind direction, and general description of the weather conditions.** 
 
-Before actually fetching the data, let's define a class that the *Sinbad* library will use to create objects for us. Go ahead and define a class named `Observation` with fields for the three pieces of information we are interested in. It doesn't matter what you name your fields, but you must also define a _constructor_ for your class that takes initial values for each field as parameters.
+_Can you figure out the labels for these pieces of the data?_
+
+Before actually fetching the data, let's define a class that the *Sinbad* library will use to create objects for us. Go ahead and **define a class named `Observation` with fields for the three pieces of information we are interested in.** It doesn't matter what you name your fields, but you must also define a _constructor_ for your class that takes initial values for each field as parameters.
 
 Also, define a method named `toString` that returns a result of type `String`. You will have to annotate the header of this method with an additional keyword, `public`, for Java to accept it. We'll see in a minute why the `toString` method of a class is a little special.
 
