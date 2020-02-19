@@ -26,27 +26,8 @@ _Can you figure out the labels for these pieces of the data?_
 
 Before actually fetching the data, let's define a class that the *Sinbad* library will use to create objects for us. Go ahead and **define a class named `Observation` with fields for the three pieces of information we are interested in.** It doesn't matter what you name your fields, but you must also define a _constructor_ for your class that takes initial values for each field as parameters.
 
-Also, define a method named `toString` that returns a result of type `String`. You will have to annotate the header of this method with an additional keyword, `public`, for Java to accept it. We'll see in a minute why the `toString` method of a class is a little special.
+Also, define a method named `toString` that returns a result of type `String`. You will have to annotate the header of this method with an additional keyword, `public`, for Java to accept it. We'll see in a minute why the `toString` method of a class is a little special. **But really you already know, because we've done this before.**
 
-Here's what my class definition looks like at this point:
-
-````
-class Observation {
-   float temp;
-   int windDir;   // in degrees
-   String description;
-   
-   Observation(String description, float temp, int windDir) {
-      this.description = description;
-      this.temp = temp;
-      this.windDir = windDir;
-   }
-      
-   public String toString() {
-      return (temp + " degrees; " + description + " (wind: " + windDir + " degrees)");
-   }
-}
-````
 
 ## Fetching Data as an Object
 
