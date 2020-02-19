@@ -26,7 +26,7 @@ Run your program. You should get a printout of available data labels in the data
 
 
 
-Let's assume for the purposes of this tutorial that we are interested in the **temperature, wind direction, and general description of the weather conditions.** 
+Let's assume for the purposes of this tutorial that we are interested in the **temperature (double), wind direction (int), and general description of the weather conditions (String).** 
 
 _Can you figure out the labels for these pieces of the data?_
 
