@@ -81,7 +81,7 @@ Here are some extensions to the program above you can try working on. If you are
 
 1. Define a second station id in your program (`id2`) and use it to fetch data and construct a second `Observation` object. 
 
-2. Add a method to your `Observation` class named `colderThan` that takes a second `Observation` object as a parameter and compares to see if the temperature of the primary (`this`) object is colder than that of the parameter.
+2. Add a method to your `Observation` class named `compareTo` that takes a second `Observation` object as a parameter and compares to see if the temperature of the primary (`this`) object is colder than that of the parameter.
 
 3. Modify your `main` method to print out the two observations and report which location is colder. 
 
