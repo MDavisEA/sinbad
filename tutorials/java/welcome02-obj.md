@@ -20,7 +20,13 @@ In the context of the weather data that we introduced in the [first tutorial](we
     ds1.load();
     ds1.printUsageString();
 
-Run your program. You should get a printout of available data labels in the data. Let's assume for the purposes of this tutorial that we are interested in the **temperature, wind direction, and general description of the weather conditions.** 
+Run your program. You should get a printout of available data labels in the data. 
+
+![Data Output](link-to-image)
+
+
+
+Let's assume for the purposes of this tutorial that we are interested in the **temperature, wind direction, and general description of the weather conditions.** 
 
 _Can you figure out the labels for these pieces of the data?_
 
