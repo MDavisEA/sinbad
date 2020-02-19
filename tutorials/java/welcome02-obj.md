@@ -22,7 +22,7 @@ In the context of the weather data that we introduced in the [first tutorial](we
 
 Run your program. You should get a printout of available data labels in the data. 
 
-![Data Output](link-to-image)
+![Data Output](https://github.com/MDavisEA/sinbad/blob/master/tutorials/java/Screen%20Shot%202020-02-19%20at%201.40.58%20PM.png)
 
 
 
@@ -85,25 +85,3 @@ Here are some extensions to the program above you can try working on. If you are
 
 3. Modify your `main` method to print out the two observations and report which location is colder. 
 
-
-
-### Processing
-
-1. Add a method to your `Observation` class named `showInfo()`  that uses `text` to display information about the observation in the Processing window.
-
-2. Add a `draw` function to your program that fetches the observation data and displays it in the sketch window (using `showInfo()`) when the program runs. (You should probably move everything except the `DataSource.initializeProcessing` statement from the `setup()` function to `draw()`.)
-
-3. Add a `location` (global) variable to your program that swaps its value between `0` and `1` when the mouse is pressed. Use `location` to toggle the display between weather observations for two different locations. 
-
-
-
-
-
-----
-
-## Complete Program Files
-
-The complete source code for the program developed in this tutorial, including a possible solution to the exercises, is available here:
-
-* [Welcome02_Object.java](https://github.com/berry-cs/sinbad/raw/master/tutorials/java/Welcome02_Object.java) (standard Java version)
-* [Welcome02_Object.pde](https://github.com/berry-cs/sinbad/raw/master/tutorials/java/Welcome02_Object/Welcome02_Object.pde) (Processing sketch)
