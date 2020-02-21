@@ -16,7 +16,7 @@ The initial steps for fetching an array of data are the same as we discussed in 
     stns.load();
     stns.printUsageString();
 
-Don't forget to `import core.data.*;` at the top of your file (and additionally call `DataSource.initializeProcessing(this);` at the beginning of `setup()` in Processing).
+Don't forget to `import core.data.*;` at the top of your file .
 
 ### Labels for layered (structured) data
 
